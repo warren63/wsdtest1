@@ -14,7 +14,7 @@
 	  <th style="text-align:left">Mobile Num</th>
 	  <th style="text-align:left">Designation</th>
     </tr>
-    <xsl:for-each select="company/employee">
+    <xsl:for-each select="library/employee">
     <tr>
       <td><xsl:value-of select="empname"/></td>
       <td><xsl:value-of select="empage"/></td>

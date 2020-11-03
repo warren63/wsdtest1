@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="library">
+	<xs:complexType>
+	    <xs:sequence>
+	        <xs:element name="employee" maxOccurs="unbounded">
+	        	<xs:complexType>
+				    <xs:sequence>
+				        <xs:attribute name="ID" type="xs:integer"/>
+						<xs:element name="empname" type="xs:string"/>
+						<xs:element name="empage" type="xs:integer"/>
+				        <xs:element name="empsalary" type="xs:integer" xs:minInclusive value="50000" xs:maxInclusive value="200000"/>
+				        <xs:element name="empemailid" type="xs:string"/>
+				        <xs:element name="empphonenum" type="xs:integer"/>
+						<xs:element name="empdesignation" type="xs:string"/>
+				    </xs:sequence>
+				</xs:complexType>
+	        </xs:element>
+	    </xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
